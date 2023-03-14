@@ -1,0 +1,21 @@
+api usada: https://rss.applemarketingtools.com/api/v2/es/music/most-played/50/albums.json
+api usada de proxy: https://api.allorigins.win/get?url=${encodeURIComponent(AQUI PONES LA API QUE VAS A USAR)}
+
+
+pasos del proyecto
+1. creamos la pagina principal
+2. hacemos el fetch a la api
+3. convertimos los datos que nos da en un formato que nos interese (json)
+4.creamos carpeta para los hooks
+5.en el hook useTopAlbums creamos un estado que nos indique si esta cargando o no (buleano)
+    5.1.creamos otro estado de error, string vacio a no ser que haya error y seria un string con un mensajito
+    5.2.metemos el fetch dentro de un try/catch 
+    5.3 gestionamos si la respuesta de la api viene mal
+6.metemos el hook (useTopAlbums) en nuestra pagina principal
+    6.1 empezamos a pintar la pagina principal
+7.
+8.
+9.
+10.
+11.
+12.
