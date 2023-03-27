@@ -13,8 +13,8 @@ const TopAlbums = () => {
   }
 
   if (error) {
-    //aqui traemos o componente entre < e /> non?
-    return <ErrorMessage error={error} />; //non entendo o de error={ error }
+    
+    return <ErrorMessage error={error} />; 
   }
 
   return (
@@ -25,8 +25,8 @@ const TopAlbums = () => {
 
         return (
           //creamos un link dentro del li para que vaya a album (nos muestre una pagina con todo ese album) y el id del album
-          //hacemos un template string para que nos lleve a la pagina// nn me acordo de pa que era o $
-          //PORQUE ME DA UN ERROR NO LINK SE E DE REACT ROUTER DOM SE NON O IMPORTO  PERO NA CLASE NON LLE DA SIN IMPORTALA?
+          //hacemos un template string para que nos lleve a la pagina
+          
           <li key={id}>
             <Link to={`/album/${id}`}>
               <AlbumInfo
