@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import getTopAlbums from "../services/getTopAlbums";
 
-//traemos el useEffect que en un principio creamos en topAlbums para poder importarlo y usarlo de forma recurrente cuando sea necesario
+
 const useTopAlbums = () => {
-  //(2)creamos un estado que empezara siendo un array vacio y meteremos en ese estado los results del objeto contents que nos da la api
+  //creamos un estado que empezara siendo un array vacio y meteremos en ese estado los results del objeto contents que nos da la api
   const [albums, setAlbums] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  //(1)recogemos datos de la api para poder trabajar con ella
+  //recogemos datos de la api para poder trabajar con ella
   //haremos un fetch a la api con un useEffect, recibe dos parametros, el callback y el array con las dependencias que vamos a monitorizar
   //el callback de useEffect debe ser asincrona (sync/await) asique hacemos funcion asincrona
   useEffect(() => {
